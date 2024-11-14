@@ -92,7 +92,7 @@ textarea {
 
 
 
-
+/* ++++++++++++++++++++++++++Media Queries (Medium Sizes)++++++++++++++++++++++++++++ */
 @media screen and (max-width: 1024px) {
     .contact {
         padding-bottom: 0;
@@ -118,6 +118,7 @@ textarea {
 }
 
 
+/* +++++++++++++++++++++++Media Queries (Smaller Screen)++++++++++++++++++++++++++++++ */
 @media screen and (max-width: 600px) {
     .contact__container {
         grid-template-columns: 1fr;

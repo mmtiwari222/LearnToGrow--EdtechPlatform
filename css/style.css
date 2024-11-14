@@ -1,3 +1,4 @@
+/* Basic root element design */
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,8 @@
   box-sizing: border-box;
 }
 
+
+/* create CSS variables  */
 :root {
   --color-primary: #6c63ff;
   --color-success: #00bf8e;
@@ -28,6 +31,8 @@
   --transition: all 400ms ease;
 }
 
+
+/* define some basic styles which is common for these elements */
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.7;
@@ -106,8 +111,8 @@ img {
   border-radius: 50px;
 }
 
-/* ++++++++++++++++++++++++++++++++++NAVBAR++++++++++++++++++++++++++++++++++++++ */
 
+/* ++++++++++++++++++++++++++++++++++NAVBAR Styles++++++++++++++++++++++++++++++++++++++ */
 nav {
   background: transparent;
   width: 100vw;
@@ -149,8 +154,8 @@ nav button {
   color: var(--color-bg2);
 }
 
-/* ++++++++++++++++++++++++++++++++++HEADER++++++++++++++++++++++++++++++++++++++ */
 
+/* ++++++++++++++++++++++++++++++++++HEADER Styles++++++++++++++++++++++++++++++++++++++ */
 header {
   position: relative;
   top: 5rem;
@@ -171,7 +176,8 @@ header {
   margin: 1rem 0 2.4rem;
 }
 
-/* +++++++++++++++++++++++++++++++++Categories++++++++++++++++++++++++++++++++++++++ */
+
+/* +++++++++++++++++++++++++++++++++Categories Styles++++++++++++++++++++++++++++++++++++++ */
 .categories {
   background: var(--color-bg1);
   height: 32rem;
@@ -239,7 +245,8 @@ header {
   font-size: 0.9rem;
 }
 
-/* +++++++++++++++++++++++++++++++++Courses++++++++++++++++++++++++++++++++++++++ */
+
+/* +++++++++++++++++++++++++++++++++Courses Styles++++++++++++++++++++++++++++++++++++++ */
 .courses {
   margin-top: 6rem;
 }
@@ -276,7 +283,8 @@ header {
   font-size: 0.9rem;
 }
 
-/* +++++++++++++++++++++++++++++++++FAQ++++++++++++++++++++++++++++++++++++++ */
+
+/* +++++++++++++++++++++++++++++++++FAQ Styles++++++++++++++++++++++++++++++++++++++ */
 .faqs {
   background: var(--color-bg1);
   box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
@@ -317,7 +325,8 @@ header {
   display: block;
 }
 
-/* +++++++++++++++++++++++++++++++++Testemonials++++++++++++++++++++++++++++++++++++++ */
+
+/* +++++++++++++++++++++++++++++++++Testemonials Styles++++++++++++++++++++++++++++++++++++++ */
 .testimonials__container {
   overflow-x: hidden;
   position: relative;
@@ -366,8 +375,8 @@ header {
   transform: rotate(45deg);
 }
 
-/* +++++++++++++++++++++++++++++++++Footer++++++++++++++++++++++++++++++++++++++ */
 
+/* +++++++++++++++++++++++++++++++++Footer Styles++++++++++++++++++++++++++++++++++++++ */
 footer {
   background: var(--color-bg1);
   padding-top: 5rem;
@@ -410,8 +419,8 @@ footer ul li a:hover {
   border-top: 1px solid var(--color-bg2);
 }
 
-/* ++++++++++++++++++++++++++Media Queries (Medium Sizes)++++++++++++++++++++++++++++ */
 
+/* ++++++++++++++++++++++++++Media Queries (Medium Sizes)++++++++++++++++++++++++++++ */
 @media screen and (max-width: 1024px) {
   .container {
     width: var(--container-width-md);
@@ -429,8 +438,8 @@ footer ul li a:hover {
   h4 {
     font-size: 1.2rem;
   }
-  /* 
-++++++++++++++++++++++++++++++++++Navbar +++++++++++++++++++++++++ */
+
+  /* ++++++++++++++++++++++++++++++++++Navbar +++++++++++++++++++++++++ */
   nav button {
     display: inline-block;
     background: transparent;
@@ -515,8 +524,8 @@ footer ul li a:hover {
   .categories__left {
     margin-right: 0;
   }
-  /* 
-  ++++++++++++++++++++++++++++++++Courses++++++++++++++++++++++ */
+  
+  /* ++++++++++++++++++++++++++++++++Courses++++++++++++++++++++++ */
   .courses {
     margin-top: 0;
   }
@@ -533,14 +542,13 @@ footer ul li a:hover {
   }
 
   /* ++++++++++++++++++++++++++++++++Footer++++++++++++++++++++++  */
-
   .footer__container {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-/* +++++++++++++++++++++++Media Queries (Smaller Screen)++++++++++++++++++++++++++++++ */
 
+/* +++++++++++++++++++++++Media Queries (Smaller Screen)++++++++++++++++++++++++++++++ */
 @media screen and (max-width: 600px) {
   .container {
     width: var(--container-width-sm);
